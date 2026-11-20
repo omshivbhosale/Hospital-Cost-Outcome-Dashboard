@@ -1,0 +1,44 @@
+{
+  "n_hospitals": 2842,
+  "n_features_original": 16,
+  "n_features_final": 61,
+  "mean_baseline": {
+    "rmse": 0.05573885584214442,
+    "mae": 0.03653390324022278,
+    "r2": -0.001965772199115312
+  },
+  "ridge_original_features": {
+    "rmse": 0.05479677019103328,
+    "mae": 0.03631842209729627,
+    "r2": 0.031617998118795176
+  },
+  "ridge_final_features": {
+    "rmse": 0.04827880505055456,
+    "mae": 0.03366052823439107,
+    "r2": 0.24829089374891222
+  },
+  "random_forest_final_features": {
+    "cv_r2_train": 0.2616571194290022,
+    "rmse": 0.042844347479847396,
+    "mae": 0.030741545196489094,
+    "r2": 0.4079970750188735
+  },
+  "gradient_boosting_final_features": {
+    "best_params": {
+      "learning_rate": 0.03,
+      "max_depth": 3,
+      "max_iter": 400,
+      "min_samples_leaf": 40
+    },
+    "cv_r2_train": 0.2402949651126863,
+    "rmse": 0.04596507498669574,
+    "mae": 0.03236411934497429,
+    "r2": 0.3186147429827315
+  },
+  "final_model": {
+    "name": "random_forest",
+    "rmse": 0.042844347479847396,
+    "mae": 0.030741545196489094,
+    "r2": 0.4079970750188734
+  }
+}
